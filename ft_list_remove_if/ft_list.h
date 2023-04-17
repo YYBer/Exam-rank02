@@ -1,16 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   swap_bits.c                                        :+:      :+:    :+:   */
+/*   ft_list.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: yli <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/17 14:35:23 by user              #+#    #+#             */
-/*   Updated: 2023/02/17 14:52:54 by user             ###   ########.fr       */
+/*   Created: 2023/04/13 17:19:08 by yli               #+#    #+#             */
+/*   Updated: 2023/04/13 17:19:10 by yli              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-unsigned char   swap_bits(unsigned char octet)
+#ifndef FT_LIST_H
+# define FT_LIST_H
+typedef struct      s_list
 {
-   return ((octet >> 4) | (octet << 4)); 
-}
+    struct s_list   *next;
+    void            *data;
+}                   t_list;
+#endif
