@@ -56,7 +56,7 @@ char    **ft_split(char *str)
         //printf("end: %d\n", end);
         if(start < end)
         {
-            result[k] = malloc(sizeof(char) * (end - start));
+            result[k] = malloc(sizeof(char) * (end - start + 1));
             if (!result[k])
                 return 0;
             result[k] = creat_str(result[k], &str[start], (end - start));
